@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Git kezdőknek</title>
+    <link rel="stylesheet" href="GITFORDUMMYS.css">
+</head>
+<body>
+    <h3>Hogy használjuk a Gitet?</h3>
+    <p>Elsősorban egyértelműen le kell töltenünk, majd feltelepíteni (<a href="https://git-scm.com/download/win">Ide linkeltem az oldalt</a>).</p>
+    <p>Ha telepítettük a Gitet, regisztrálunk a Githubra (<a class="oldal" href="https://github.com/">Ide linkeltem az oldalt</a>).</p>
+    <p>Ha regisztáltunk, kezdhetjük is! Célszerű minden projektet külön mappába csinálni. Először regisztrálni kell a Github fiókunkat a Git Bashba (csak egyszer kell megcsinálni), ezt ezekkel a parancsokkal lehet megtenni:</p>
+    <ul>
+        <li>git config --global user.name "Github-on megadott név"</li>
+        <li>git config --global user.email "Github-on regisztrált emailcím"</li>
+    </ul>
+    <p>Hozzunk létre a lokális mappánkba egy repositoryt.</p>
+    <ul>
+        <li>mkdir repository-name</li>
+        <li>cd repository-name</li>
+        <li>git init</li>
+    </ul>
+    <p>Távoli kapcsolat beállítása a későbbi feltöltéshez</p>
+    <ul>
+        <li> új origin nevű távoli kapcsolat beállítása:<br/>
+            git remote add origin repository-link (github-ból code-ból elérhető a közvetlen link)</li>
+        <li>távoli kapcsolatok lekérdezése:<br/>
+            git remote -v</li>
+        <li>origin nevű távoli kapcsolat frissítése:<br/>
+            git fetch origin</li>
+        <li>minden branch lekérdezése:<br/>
+            git branch –a</li> 
+    </ul>
+    <p>Adjuk hozzá a fájlokat az átmeneti tárolóhoz</p>
+    <ul>
+        <li>egy fájl hozzáadása:<br/>
+        git add fájl-név</li>
+        <li>A mappában lévő összes fájl hozzáadása:<br/>
+        git add .</li>
+    </ul>
+
+    <p>Státusz lekérése</p>
+    <ul>
+        <li>git status</li>
+    </ul>
+
+    <p>Fájl feltöltése a távoli tárolóba</p>
+    <ul>
+        <li>git push origin master</li>
+    </ul>
+    <p class="vege">És kész is vagyunk. A fájlaink már a githubos repository-n vannak.</p>
+    <a href="GITFORDUMMYS.html">Vissza</a>
+</body>
+</html>
